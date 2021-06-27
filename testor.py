@@ -1,7 +1,20 @@
-# Here's my solution.
+import time
+import sys
 
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+done = 'false'
+#here is the animation
+def animate():
+    while done == 'false':
+        sys.stdout.write('\rloading |')
+        time.sleep(0.1)
+        sys.stdout.write('\rloading /')
+        time.sleep(0.1)
+        sys.stdout.write('\rloading -')
+        time.sleep(0.1)
+        sys.stdout.write('\rloading \\')
+        time.sleep(0.1)
+    sys.stdout.write('\rDone!     ')
 
-print(list(set(a).intersection(b)))
-print("hello world motherfuckers hihihi")
+animate()
+#long process here
+done = 'false'
