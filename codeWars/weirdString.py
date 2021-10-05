@@ -1,8 +1,5 @@
 def accum(s):
-    newstring = ""
-    for i in s:
-        newstring = s.index(i) * i
-        return newstring
+    return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(s))
         
 
 print(accum("abcde"))
