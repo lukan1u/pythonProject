@@ -1,3 +1,3 @@
-#cars = ['kia', 'audi', 'bmw']
-#for car in enumerate(cars):
-#  print(car)
+a, b = 2, 5
+str(a, b)
+print(a,b)
