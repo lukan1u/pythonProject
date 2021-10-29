@@ -8,4 +8,4 @@ def better_than_average(class_points, your_points):
 print(better_than_average([2, 20], 5))
 
 
-# one line solution: return your_points > sum(class_points) / len(class_points)
+# one line solution: return your_points > sum(class_points) / len(class_points) 
