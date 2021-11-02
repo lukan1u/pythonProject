@@ -1,4 +1,4 @@
-import time
+mport time
 import sys
 
 done = 'false'
@@ -19,4 +19,4 @@ animate()
 #long process here
 done = 'false'
 
-print("hello world")
+print("hello worldddddd")
