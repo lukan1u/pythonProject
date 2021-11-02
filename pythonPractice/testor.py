@@ -18,3 +18,5 @@ def animate():
 animate()
 #long process here
 done = 'false'
+
+print("hello world")
