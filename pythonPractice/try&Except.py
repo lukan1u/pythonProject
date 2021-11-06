@@ -1,3 +1,4 @@
+print("hello world")
 try:
      sa = open("hello.txt")
 except FileNotFoundError:
