@@ -1,22 +1,17 @@
-mport time
-import sys
+from typing import NamedTuple
+import numpy
+import timeit
 
-done = 'false'
-#here is the animation
-def animate():
-    while done == 'false':
-        sys.stdout.write('\rloading |')
-        time.sleep(0.1)
-        sys.stdout.write('\rloading /')
-        time.sleep(0.1)
-        sys.stdout.write('\rloading -')
-        time.sleep(0.1)
-        sys.stdout.write('\rloading \\')
-        time.sleep(0.1)
-    sys.stdout.write('\rDone!     ')
+def sum_range(n = 100_000_000):
+    return sum(range(n))
 
-animate()
-#long process here
-done = 'false'
+def for_loop(n = 100_000_000):
+    return numpy.sum(numpy.arange(n))
 
-print("hello worldddddd")
+def main():
+    print("sum range\t", timeit.timeit(sum_range, number = 1))
+    print("sum numpy\t", timeit.timeit(for_loop, number = 1))
+
+
+if __name__ == '__main__':
+    main()

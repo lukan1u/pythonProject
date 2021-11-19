@@ -15,5 +15,3 @@ def prime_checker(x):
     clear()
 
 prime_checker(int(input("Enter your number to check wheather it's prime\n>>> ")))
-
-
