@@ -4,3 +4,6 @@ def namelist(names):
     return x
 
 print(namelist([{'name': 'Bart'},{'name': 'Lisa'}]))
+
+a = "abc"
+print(a[1])
