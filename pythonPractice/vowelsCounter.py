@@ -4,3 +4,4 @@ def get_count(sentence):
     return print(len(final))
 
 get_count("aeiou")
+    
