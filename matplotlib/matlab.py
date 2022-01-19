@@ -9,4 +9,3 @@ y = [10, 5, 8, 4, 2]
 
 plt.plot(x, y)
 plt.show()
-plt.show()
