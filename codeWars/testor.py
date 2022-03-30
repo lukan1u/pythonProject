@@ -1,9 +1,8 @@
-def namelist(names):
-    # how to access specific item within list of dictionaries
-    x = names[1]["name"] 
-    return x
+mydict = {
+    83: 80
+}
 
-print(namelist([{'name': 'Bart'},{'name': 'Lisa'}]))
+lol = "helpS me man!"
+print(lol.translate(mydict))
 
-a = "abc"
-print(a[1])
+print(lol.translate(str.maketrans("hel", "123")))
